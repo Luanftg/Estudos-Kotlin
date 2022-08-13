@@ -27,12 +27,19 @@
 
 **Operações podem ser encadeadas**
 
-## Listas Mutáveis
+## Mutable Collections
 
+- mutableList
+  - ``mutableListOf``
+- mutableSet
+  - ``mutableSetOf``
+- mutableMap
+  - ``mutableMapOf``
 
-- set (*Conjuntos*)
-  - ``setOf``
+### Operações com Conjuntos Mutáveis
 
 - [x] ``.union``
 - [x] ``.substract``
 - [x] ``.intersect``
+- [x] ``.add``
+- [x] ``.remove``
