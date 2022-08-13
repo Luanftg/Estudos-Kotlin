@@ -43,3 +43,15 @@
 - [x] ``.intersect``
 - [x] ``.add``
 - [x] ``.remove``
+
+## Criando uma classe Repositório (simulando um banco de dados) com os métodos
+
+**indexing operator**
+
+- create (```map[id] = value```)
+- remove (``map.remove()``)
+- findById (``map[id]``)
+- findAll (``map.value``)
+
+
+ 
