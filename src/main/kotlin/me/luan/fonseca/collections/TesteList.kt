@@ -14,19 +14,22 @@ fun main() {
         .groupBy { it.tipoContrato }
         //.sortedBy { it.salario }
         .forEach { println( it ) }
-    println("--------")
-    oficineiros
+
+    val oficineiroSetCLT = setOf(lena,luiza)
+    val oficineiroSetPJ = setOf(luan)
+    val oficineiroSubstract = setOf(luan,lena,luiza)
+
+    println("-----Union---")
+    val resultUnion = oficineiroSetCLT.union(oficineiroSetPJ)
+    resultUnion.forEach { println(it) }
+
+    println("----Substract----")
+    val resultSubstract = oficineiroSubstract.subtract(oficineiroSetPJ)
+    resultSubstract.forEach { println(it) }
+
+    println("----Intersect----")
+    val resulIntersect = oficineiroSubstract.intersect(oficineiroSetPJ)
+    resulIntersect.forEach { println(it) }
 
 }
 
-data class Oficineiros(
-    val nome: String,
-    val salario: Double,
-    val tipoContrato: String
-    ) {
-    override fun toString(): String =
-        """
-            nome: $nome
-            salario: $salario
-        """.trimIndent()
-}

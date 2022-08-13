@@ -29,3 +29,10 @@
 
 ## Listas Mutáveis
 
+
+- set (*Conjuntos*)
+  - ``setOf``
+
+- [x] ``.union``
+- [x] ``.substract``
+- [x] ``.intersect``
