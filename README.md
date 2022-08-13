@@ -54,4 +54,8 @@
 - findAll (``map.value``)
 
 
+## Extension Functions
+
+*cria funções específicas a partir de um tipo sem precisar usar herança*
+
  
